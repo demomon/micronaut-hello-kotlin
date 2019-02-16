@@ -1,0 +1,14 @@
+micronaut:
+    application:
+        name: Leika
+
+endpoints:
+    info:
+        enabled: true
+        sensitive: false
+    health:
+        enabled: true
+
+redis:
+    uri: redis://localhost
+
