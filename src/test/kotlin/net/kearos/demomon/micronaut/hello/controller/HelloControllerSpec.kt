@@ -14,7 +14,7 @@ object HelloControllerSpec: Spek({
 
         it("test /hello responds Hello World") {
             var rsp : String = client.toBlocking().retrieve("/hello")
-            assertEquals(rsp, "Hello World")
+            assertEquals(rsp, "Hello World!")
         }
 
         afterGroup {

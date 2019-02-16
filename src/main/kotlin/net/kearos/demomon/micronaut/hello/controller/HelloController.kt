@@ -11,6 +11,6 @@ class HelloController {
     @Get("/")
     @Produces(MediaType.TEXT_PLAIN)
     fun index(): String {
-        return "Hello World"
+        return "Hello World!"
     }
 }
