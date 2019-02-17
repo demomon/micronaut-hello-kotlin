@@ -1,6 +1,6 @@
 # !! File must end with empty line !!
 dependencies:
-- alias: micronaut-hello-kotlin-redis
+- alias: micronaut-hello-kotlin-redis-master
   name: redis
   repository: https://kubernetes-charts.storage.googleapis.com
   version: 6.1.0

@@ -2,12 +2,16 @@ micronaut:
     application:
         name: Leika
 
+server:
+    server-header: "${SERVER_HEADER:micronaut-hello-kotlin}"
+
 endpoints:
     info:
         enabled: true
         sensitive: false
     health:
         enabled: true
+        sensitive: false
 
 redis:
     uri: "redis://${REDIS_HOST:localhost}:${REDIS_PORT:6379}"
