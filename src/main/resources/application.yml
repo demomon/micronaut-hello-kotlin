@@ -10,5 +10,5 @@ endpoints:
         enabled: true
 
 redis:
-    uri: redis://localhost
+    uri: "redis://${REDIS_HOST:localhost}:${REDIS_PORT:6379}"
 
