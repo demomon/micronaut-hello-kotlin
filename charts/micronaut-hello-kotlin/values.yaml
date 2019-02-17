@@ -7,7 +7,6 @@ image:
   tag: dev
   pullPolicy: IfNotPresent
 service:
-  name: micronaut-hello-kotlin
   type: ClusterIP
   externalPort: 80
   internalPort: 8080
@@ -20,7 +19,6 @@ service:
       //  certmanager.k8s.io/issuer: letsencrypt-prod
       // fabric8.io/exposeUrl: https://micronaut-hello-kotlin.jx.jx.kearos.net
   ingress:
-    name: micronaut-hello-kotlin
     annotations:
       certmanager.k8s.io/issuer: letsencrypt-prod
       kubernetes.io/ingress.class: nginx

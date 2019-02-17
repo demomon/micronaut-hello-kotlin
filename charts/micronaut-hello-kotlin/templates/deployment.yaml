@@ -23,7 +23,7 @@ spec:
         imagePullPolicy: {{ .Values.image.pullPolicy }}
         env:
           - name: REDIS_HOST
-            value: {{ template "fullname" . }}-redis
+            value: {{ template "fullname" . }}-redis-master
         ports:
         - containerPort: {{ .Values.service.internalPort }}
         livenessProbe:
