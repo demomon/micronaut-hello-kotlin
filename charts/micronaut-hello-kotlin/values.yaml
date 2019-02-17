@@ -3,8 +3,8 @@
 # Declare variables to be passed into your templates.
 replicaCount: 1
 image:
-  repository: draft
-  tag: dev
+  repository: 10.51.243.203:5000/demomon/micronaut-hello-kotlin
+  tag: 0.1.6
   pullPolicy: IfNotPresent
 service:
   name: micronaut-hello-kotlin
